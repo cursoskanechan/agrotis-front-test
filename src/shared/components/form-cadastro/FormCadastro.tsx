@@ -1,9 +1,18 @@
-import { Button } from "@mui/material";
+import { Form } from '@unform/web'
+import { VTextField } from '../../forms';
+
+
 import './FormCadastro.css';
 
 export const FormCadastro: React.FC = () => {
 
     return (
-        <Button variant='contained' color='primary'>Teste</Button>
+        <Form onSubmit={(dados) => console.log(dados)}>
+            <VTextField
+                name='nomeCompleto'
+                label='Nome*'/>
+
+            <button type='submit'>Submit</button>
+        </Form>
     );
 };
