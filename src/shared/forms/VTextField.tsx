@@ -27,6 +27,8 @@ export const VTextField: React.FC<TVTextFieldProps> = ({ name, ...rest }) => {
             helperText={error}
             defaultValue={defaultValue}
 
+            variant="standard"
+
             value={value}
             onChange={e => setValue(e.target.value)}
             
